@@ -1,7 +1,7 @@
 import { Product } from "@/types/product.interface";
 import Image from "next/image";
 
-export default async function ProductDetailPage({ data }: { data: Product }) {
+export default function ProductDetailPage({ data }: { data: Product }) {
   return (
     <div className="grid md:grid-cols-2 gap-8">
       <div className="border border-gray-300 p-4">

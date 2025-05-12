@@ -26,7 +26,7 @@ export default function ProductsClientPage() {
       {loading ? (
         <Loader />
       ) : (
-        <ProductList data={products} desc="Client Component" />
+        <ProductList data={products} desc="Client Component" path="clients" />
       )}
     </>
   );

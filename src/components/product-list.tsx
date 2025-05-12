@@ -6,9 +6,11 @@ import Link from "next/link";
 export default function ProductList({
   data,
   desc,
+  path,
 }: {
   data: Product[];
   desc: string;
+  path: string;
 }) {
   return (
     <main className="container mx-auto py-8">
@@ -21,7 +23,7 @@ export default function ProductList({
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {data.map((product) => (
-          <Link key={product.id} href={`/products/${product.id}`}>
+          <Link key={product.id} href={`/${path}/${product.id}`}>
             <div
               key={product.id}
               className="cursor-pointer bg-gray-600/20 rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300"

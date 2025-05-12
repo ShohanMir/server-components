@@ -23,7 +23,9 @@ export default async function ProductDetailsPage({
 
         {/* Streaming/Suspense Review Section */}
         <Suspense
-          fallback={<p className="text-gray-400">Loading reviews...</p>}
+          fallback={
+            <p className="text-gray-400 text-center">Loading reviews...</p>
+          }
         >
           <ProductReviews />
         </Suspense>

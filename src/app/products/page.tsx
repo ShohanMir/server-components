@@ -6,7 +6,11 @@ export default async function ProductPage() {
 
   return (
     <>
-      <ProductList data={data.products} desc="Server Component" />
+      <ProductList
+        data={data.products}
+        desc="Server Component"
+        path="products"
+      />
     </>
   );
 }
